@@ -142,6 +142,7 @@ contract FabaToken is StandardToken {
     }
 
 
+
     // Added voting
 
 
@@ -264,10 +265,13 @@ contract FabaToken is StandardToken {
 
     // Added dividends
 
+    // The following function is commented out due to double definition
+    // #! TODO: Fix this known error!
+/*
     function () public payable {
        totalDividends = totalDividends.add(msg.value);
     }
-
+*/
     function dividendBalanceOf(address account) public constant returns (uint256) {
         var newDividends =     totalDividends.sub(accounts[account].lastDividends);
         var product = accounts[account].balance.mul(newDividends);
