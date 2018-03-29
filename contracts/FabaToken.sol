@@ -11,7 +11,7 @@ import 'zeppelin-solidity/contracts/token/ERC20/StandardToken.sol';
  */
 contract FabaToken is StandardToken {
 
-  /* using SafeMath for uint256; */
+  using SafeMath for uint256;
 
   mapping(address => uint256) balances;
 
@@ -37,32 +37,42 @@ contract FabaToken is StandardToken {
 
   // Added voting from http://solidity.readthedocs.io/en/develop/solidity-by-example.html
 
-    // This declares a new complex type which will
-    // be used for variables later.
-    // It will represent a single voter.
-    struct Voter {
-        uint weight; // weight is accumulated by delegation
-        bool voted;  // if true, that person already voted
-        address delegate; // person delegated to
-        uint vote;   // index of the voted proposal
-    }
+  // This declares a new complex type which will
+  // be used for variables later.
+  // It will represent a single voter.
+  struct Voter {
+    uint weight; // weight is accumulated by delegation
+    bool voted;  // if true, that person already voted
+    address delegate; // person delegated to
+    uint vote;   // index of the voted proposal
+  }
 
-    // This is a type for a single proposal.
-    struct Proposal {
-        bytes32 name;   // short name (up to 32 bytes)
-        uint voteCount; // number of accumulated votes
-    }
+  // This is a type for a single proposal.
+  struct Proposal {
+    bytes32 name;   // short name (up to 32 bytes)
+    uint voteCount; // number of accumulated votes
+  }
 
-    address public chairperson;
+  address public chairperson;
 
-    // This declares a state variable that
-    // stores a `Voter` struct for each possible address.
-    mapping(address => Voter) public voters;
+  // This declares a state variable that
+  // stores a `Voter` struct for each possible address.
+  mapping(address => Voter) public voters;
 
-    // A dynamically-sized array of `Proposal` structs.
-    Proposal[] public proposals;
+  // A dynamically-sized array of `Proposal` structs.
+  Proposal[] public proposals;
 
 
+  // Added dividens distribution in ETH according to 
+  // https://medium.com/@dejanradic.me/pay-dividend-in-ether-using-token-contract-104499de116a
+
+  uint256 public totalDividends;
+  struct Account {
+    uint256 balance;
+    uint256 lastDividends;
+  } 
+
+  mapping (address => Account) accounts;
 
 
   /**
@@ -84,10 +94,10 @@ contract FabaToken is StandardToken {
         // initially assign all tokens to the fundsWallet
         balances[fundsWallet] = totalSupply;
         Transfer(0x0, fundsWallet, totalSupply);
-  }
+    }
 
 
-  function() isIcoOpen payable {
+    function() isIcoOpen payable {
         totalRaised = totalRaised.add(msg.value);
 
         uint256 tokenAmount = calculateTokenAmount(msg.value);
@@ -132,7 +142,7 @@ contract FabaToken is StandardToken {
     }
 
 
-  // Added voting
+    // Added voting
 
 
     /// Create a new ballot to choose one of `proposalNames`.
@@ -252,7 +262,48 @@ contract FabaToken is StandardToken {
     }
 
 
+    // Added dividends
+
+    function () public payable {
+       totalDividends = totalDividends.add(msg.value);
+    }
+
+    function dividendBalanceOf(address account) public constant returns (uint256) {
+        var newDividends =     totalDividends.sub(accounts[account].lastDividends);
+        var product = accounts[account].balance.mul(newDividends);
+        return product.div(totalSupply);
+    }
+
+    function claimDividend() public {
+        var owing = dividendBalanceOf(msg.sender);
+        if (owing > 0) {
+          msg.sender.transfer(owing);
+          accounts[msg.sender].lastDividends = totalDividends;
+        }
+    }
+
+
+    function _transfer(address _from, address _to, uint256 _value) internal {
+        require(_to != address(0));
+        require(_value <= accounts[_from].balance);
+        require(accounts[_to].balance + _value < accounts[_to].balance);
+ 
+        var fromOwing = dividendBalanceOf(_from);
+        var toOwing = dividendBalanceOf(_to);
+        require(fromOwing <= 0 && toOwing <= 0);
+ 
+        accounts[_from].balance = accounts[_from].balance.sub(_value);
+        accounts[_to].balance = accounts[_to].balance.add(_value);
+ 
+        accounts[_to].lastDividends = accounts[_from].lastDividends;
+ 
+        Transfer(_from, _to, _value);
+    }
+
+// Smart contract end
 }
+
+// Temporary values to use in testing:
 
 // var now = Math.floor(new Date().getTime() / 1000);
 // var ICOstart = Math.floor(new Date('2018-04-04').getTime() /1000)
@@ -261,4 +312,5 @@ contract FabaToken is StandardToken {
 // var Phase3 = Math.floor(new Date('2018-04-15').getTime() /1000)
 
 
+// EOF
 
