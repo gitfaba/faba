@@ -48,7 +48,7 @@ Investor must not use other wallets, coinmarkets or stocks. Can lose money.
 ## Main network configuration
 
 * _Minimal insvested limit_     : 0,5 ETH(200$)
-* _Price_                       : 1 ETH = 370 FABA
+* _Price_                       : 1 ETH = 583 FABA
 * _Bounty tokens percent_       : 5% 
 * _FABAcompany tokens percent_  : 20% 
 * _ReservesForExchange tokens percent_  : 2%
@@ -79,7 +79,7 @@ Investor must not use other wallets, coinmarkets or stocks. Can lose money.
 ### Crowdsale stages
 
 #### Presale
-* _Base price_                 : 520 FABA per ETH (40% bonus)
+* _Base price_                 : 583 FABA per ETH (40% bonus)
 * _Hardcap_                    : (1200 ETH)
 * _Period_                     : 14 days 
 * _Start_                      : Wed, 18 Apr 2018 00:00:00 GMT
@@ -87,7 +87,7 @@ Investor must not use other wallets, coinmarkets or stocks. Can lose money.
 * _Contract owner_             : 0x83Af3226ca6d215F31dC0Baa0D969C06A1E5db3b
 
 #### ICO
-* _Base price_                 : 370 FABA per ETH
+* _Base price_                 : 583 FABA per ETH
 * _Hardcap_                    : (256022 ETH)
 * _Start_                      : Wed, 02 May 2018 00:00:00 GMT
 * _Wallet_                     : 0x83Af3226ca6d215F31dC0Baa0D969C06A1E5db3b
