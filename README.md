@@ -47,23 +47,19 @@ Investor must not use other wallets, coinmarkets or stocks. Can lose money.
 
 ## Main network configuration
 
-* _Minimal insvested limit_     : 0,5 ETH(200$)
-* _Price_                       : 1 ETH = 583 FABA
-* _Bounty tokens percent_       : 5% 
-* _FABAcompany tokens percent_  : 20% 
-* _ReservesForExchange tokens percent_  : 2%
-* _Software tokens percent_     : 1% 
-* _Mentors tokens percent_      : 10% 
+* _Minimal insvested limit_     : 0,3 ETH(200$)
+* _Price_                       : 1 ETH = 600 FABA
+* _FABAcompany tokens percent_  : 40% 
+* _Tym tokens percent_          : 8% 
+* _Mentors tokens percent_      : 2% 
 
 * _FABAcompanyTokensWallet_     :0x96E187bdD7d817275aD45688BF85CD966A80A428
-* _Bounty tokens wallet_        :0x83Af3226ca6d215F31dC0Baa0D969C06A1E5db3b
-* _ReservesForExchangeTokensWallet_:0x83Af3226ca6d215F31dC0Baa0D969C06A1E5db3b
-* _MentorsTokensWallet_         : 0x66CeD6f10d77ae5F8dd7811824EF71ebC0c8aEFf
-* _SoftwareTokensWallet_        : 0x83Af3226ca6d215F31dC0Baa0D969C06A1E5db3b
+* _Tym TokensWallet_            : 0x781b6EeCa4119f7B9633a03001616161c698b2c5
+
 ### Links
-1. Configurator -https://rinkeby.etherscan.io/tx/0x31597091f9198ab6ba1bc7ee4bcc952a182b5d083ac4b70a50b95f666df5c91a
-2. _Deploi_ -https://rinkeby.etherscan.io/tx/0x55fc441e24a918b5a42286ddcc1d96cb581c11ac2463a91152ab12e70a829d55
-3.
+1. Configurator -https://etherscan.io/address/0x724e1f5c8824875e555b94e819d731f7e02315bd
+2. _Deploi_ -   hhttps://etherscan.io/address/0x0a1d2ff7156a48131553cf381f220bbedb4efa37
+
 ### Referal system
 * _Referer percent_ - 15%
 * _Minimal investor value limit to activate referer bonus_ 0.5- ETH
@@ -79,26 +75,25 @@ Investor must not use other wallets, coinmarkets or stocks. Can lose money.
 ### Crowdsale stages
 
 #### Presale
-* _Base price_                 : 583 FABA per ETH (40% bonus)
-* _Hardcap_                    : (1200 ETH)
-* _Period_                     : 14 days 
-* _Start_                      : Wed, 18 Apr 2018 00:00:00 GMT
-* _Wallet_                     : 0x83Af3226ca6d215F31dC0Baa0D969C06A1E5db3b
-* _Contract owner_             : 0x83Af3226ca6d215F31dC0Baa0D969C06A1E5db3b
+* _Base price_                 : 600 FABA per ETH
+* _Hardcap_                    : (500 ETH)
+* _Period_                     : 300 days 
+* _Start_                      : •	01.03.2018 00:00:00 GMT
+* _Wallet_                     : 0x66CeD6f10d77ae5F8dd7811824EF71ebC0c8aEFf
+* _Contract owner_             : 0x66CeD6f10d77ae5F8dd7811824EF71ebC0c8aEFf
 
 #### ICO
-* _Base price_                 : 583 FABA per ETH
-* _Hardcap_                    : (256022 ETH)
-* _Start_                      : Wed, 02 May 2018 00:00:00 GMT
-* _Wallet_                     : 0x83Af3226ca6d215F31dC0Baa0D969C06A1E5db3b
-* _Contract owner_             : 0x83Af3226ca6d215F31dC0Baa0D969C06A1E5db3b
+* _Base price_                 : 450 FABA per ETH
+* _Hardcap_                    : (112500 ETH)
+* _Start_                      : •	06.06.2018  00:00:00 GMT
+* _Wallet_                     : 0x66CeD6f10d77ae5F8dd7811824EF71ebC0c8aEFf
+* _Contract owner_             : 0x66CeD6f10d77ae5F8dd7811824EF71ebC0c8aEFf
 
 _Milestones_
-1. 14 days                      : bonus +20% 
-2. 14 days                      : bonus +10% 
-3. 14 days                      : bonus +0% 
+1. 30 days                      : bonus +20% 
+2. 30 days                      : bonus +15% 
+3. 30 days                      : bonus +10% 
 
 
 //Token owners will be paid a share of profits from the sale of stakes in the invested companies. Profits will be paid in ETH.
-//Tokens will be distributed within 8 weeks after ICO
 
