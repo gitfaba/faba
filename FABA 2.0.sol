@@ -773,4 +773,3 @@ contract Configurator is Ownable {
 
 }
 //Token owners will be paid a share of profits from the sale of stakes in the invested companies. Profits will be paid in ETH.
-//Tokens will be distributed within 8 weeks after ICO
