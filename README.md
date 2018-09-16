@@ -47,21 +47,21 @@ Investor must not use other wallets, coinmarkets or stocks. Can lose money.
 
 ## Main network configuration
 
-* _Minimal insvested limit_     : 0,3 ETH(200$)
+* _Minimal invested limit_      : 0,3 ETH
 * _Price_                       : 1 ETH = 600 FABA
 * _FABAcompany tokens percent_  : 40% 
-* _Tym tokens percent_          : 8% 
+* _Team tokens percent_         : 8% 
 * _Mentors tokens percent_      : 2% 
 
-* _FABAcompanyTokensWallet_     :0x96E187bdD7d817275aD45688BF85CD966A80A428
-* _Tym TokensWallet_            : 0x781b6EeCa4119f7B9633a03001616161c698b2c5
+* _FABAcompanyTokensWallet_     : 0x96E187bdD7d817275aD45688BF85CD966A80A428
+* _Team TokensWallet_           : 0x781b6EeCa4119f7B9633a03001616161c698b2c5
 
 ### Links
-1. Configurator -https://etherscan.io/address/0x724e1f5c8824875e555b94e819d731f7e02315bd
-2. _Deploi_ -   hhttps://etherscan.io/address/0x0a1d2ff7156a48131553cf381f220bbedb4efa37
+1. Configurator  https://etherscan.io/address/0x724e1f5c8824875e555b94e819d731f7e02315bd
+2. _Deploy_ -    https://etherscan.io/address/0x0a1d2ff7156a48131553cf381f220bbedb4efa37
 
 ### Referal system
-* _Referer percent_ - 15%
+* _Referer percent_ - 10%
 * _Minimal investor value limit to activate referer bonus_ 0.5- ETH
 * _Limitations_ - Investor сan't accrue bonus to himself
 
