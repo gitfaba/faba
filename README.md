@@ -15,7 +15,7 @@
 
 Contract mint bounty and founders tokens after main sale stage finished. 
 Crowdsale contracts have special function to retrieve transferred in errors tokens.
-Also crowdsale contracts have special function to direct mint tokens in wei value (featue implemneted to support external pay gateway).
+Also crowdsale contracts have special function to direct mint tokens in value (featue implemented to support external pay gateway).
 
 ### Contracts contains
 1. _FABAToken_ - Token contract
@@ -33,7 +33,7 @@ Contract manager must call finishMinting after each crowdsale milestone!
 To support external mint service manager should specify address by calling _setDirectMintAgent_. After that specified address can direct mint FABA tokens by calling _directMint_.
 
 ### How to invest
-To purchase tokens investor should send ETH (more than minimum 0,0375 ETH) to corresponding crowdsale contract.
+To purchase tokens investor should send ETH (more than minimum 1 ETH) to corresponding crowdsale contract.
 Recommended GAS: 250000, GAS PRICE - 21 Gwei.
 
 ### Wallets with ERC20 support
@@ -47,8 +47,8 @@ Investor must not use other wallets, coinmarkets or stocks. Can lose money.
 
 ## Main network configuration
 
-* _Minimal invested limit_      : 0,3 ETH
-* _Price_                       : 1 ETH = 600 FABA
+* _Minimal invested limit_      : 1.0 ETH
+* _Price_                       : 1 ETH = 218 FABA
 * _FABAcompany tokens percent_  : 40% 
 * _Team tokens percent_         : 8% 
 * _Mentors tokens percent_      : 2% 
@@ -62,7 +62,7 @@ Investor must not use other wallets, coinmarkets or stocks. Can lose money.
 
 ### Referal system
 * _Referer percent_ - 10%
-* _Minimal investor value limit to activate referer bonus_ 0.5- ETH
+* _Minimal investor value limit to activate referer bonus_ 1.2- ETH
 * _Limitations_ - Investor сan't accrue bonus to himself
 
 
@@ -83,8 +83,8 @@ Investor must not use other wallets, coinmarkets or stocks. Can lose money.
 * _Contract owner_             : 0x66CeD6f10d77ae5F8dd7811824EF71ebC0c8aEFf
 
 #### ICO
-* _Base price_                 : 450 FABA per ETH
-* _Hardcap_                    : (112500 ETH)
+* _Base price_                 : 218 FABA per ETH
+* _Hardcap_                    : (309500 ETH)
 * _Start_                      : •	06.06.2018  00:00:00 GMT
 * _Wallet_                     : 0x66CeD6f10d77ae5F8dd7811824EF71ebC0c8aEFf
 * _Contract owner_             : 0x66CeD6f10d77ae5F8dd7811824EF71ebC0c8aEFf
