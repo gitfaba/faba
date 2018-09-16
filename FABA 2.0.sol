@@ -624,11 +624,11 @@ contract Mainsale is StagedCrowdsale, FABACommonSale {
 
   address public FABAcompanyTokensWallet;
 
-  address public TymTokensWallet;
+  address public TeamTokensWallet;
 
   uint public FABAcompanyTokensPercent;
   
-  uint public TymTokensPercent;
+  uint public TeamTokensPercent;
   
   
   
@@ -638,16 +638,16 @@ contract Mainsale is StagedCrowdsale, FABACommonSale {
     FABAcompanyTokensPercent = newFABAcompanyTokensPercent;
   }
   
-  function setTymTokensPercent(uint newTymTokensPercent) public onlyOwner {
-    TymTokensPercent = newTymTokensPercent;
+  function setTeamTokensPercent(uint newTeamTokensPercent) public onlyOwner {
+    TeamTokensPercent = newTeamTokensPercent;
   }
  
   function setFABAcompanyTokensWallet(address newFABAcompanyTokensWallet) public onlyOwner {
     FABAcompanyTokensWallet = newFABAcompanyTokensWallet;
   }
 
-  function setTymTokensWallet(address newTymTokensWallet) public onlyOwner {
-    TymTokensWallet = newTymTokensWallet;
+  function setTeamTokensWallet(address newTeamTokensWallet) public onlyOwner {
+    TeamTokensWallet = newTeamTokensWallet;
   }
 
   function calculateTokens(uint _invested) internal returns(uint) {
@@ -666,9 +666,9 @@ contract Mainsale is StagedCrowdsale, FABACommonSale {
     uint mintedTokens = token.totalSupply();
     uint allTokens = mintedTokens.mul(percentRate).div(percentRate.sub(summaryTokensPercent));
     uint FABAcompanyTokens = allTokens.mul(FABAcompanyTokensPercent).div(percentRate);
-    uint TymTokens = allTokens.mul(TymTokensPercent).div(percentRate);
+    uint TeamTokens = allTokens.mul(TeamTokensPercent).div(percentRate);
     mintTokens(FABAcompanyTokensWallet, FABAcompanyTokens);
-    mintTokens(TymTokensWallet,TymTokens);
+    mintTokens(TeamTokensWallet,TeamTokens);
     token.finishMinting();
   }
 
@@ -745,13 +745,13 @@ contract Configurator is Ownable {
     mainsale.setPrice(450000000000000000000);
     mainsale.setWallet(0x83Af3226ca6d215F31dC0Baa0D969C06A1E5db3b);
     mainsale.setFABAcompanyTokensWallet(0x96E187bdD7d817275aD45688BF85CD966A80A428);
-    mainsale.setTymTokensWallet(0x83Af3226ca6d215F31dC0Baa0D969C06A1E5db3b);
+    mainsale.setTeamTokensWallet(0x83Af3226ca6d215F31dC0Baa0D969C06A1E5db3b);
     mainsale.setStart(1551398400);
     mainsale.setHardcap(173000000000000000000000);
    
     
     mainsale.setFABAcompanyTokensPercent(40);
-    mainsale.setTymTokensPercent(8);
+    mainsale.setTeamTokensPercent(8);
 |   //Token for Menors (2)
     commonConfigure(mainsale, token);
 	
