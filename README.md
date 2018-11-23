@@ -74,18 +74,18 @@ Investor must not use other wallets, coinmarkets or stocks. Can lose money.
 
 ### Crowdsale stages
 
-#### Presale
-* _Base price_                 : 600 FABA per ETH
-* _Hardcap_                    : (500 ETH)
+#### ICO
+* _Base price_                 : 122 FABA per ETH
+* _Hardcap_                    : (549180 ETH)
 * _Period_                     : 300 days 
 * _Start_                      : •	01.03.2018 00:00:00 GMT
 * _Wallet_                     : 0x66CeD6f10d77ae5F8dd7811824EF71ebC0c8aEFf
 * _Contract owner_             : 0x66CeD6f10d77ae5F8dd7811824EF71ebC0c8aEFf
 
-#### ICO
-* _Base price_                 : 122 FABA per ETH
+#### ICO_second_round
+* _Base price_                 : 159 FABA per ETH
 * _Hardcap_                    : (549180 ETH)
-* _Start_                      : •	06.06.2018  00:00:00 GMT
+* _Start_                      : •	01.03.2019  00:00:00 GMT
 * _Wallet_                     : 0x66CeD6f10d77ae5F8dd7811824EF71ebC0c8aEFf
 * _Contract owner_             : 0x66CeD6f10d77ae5F8dd7811824EF71ebC0c8aEFf
 
