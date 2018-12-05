@@ -47,8 +47,8 @@ Investor must not use other wallets, coinmarkets or stocks. Can lose money.
 
 ## Main network configuration
 
-* _Minimal invested limit_      : 1.7 ETH
-* _Price_                       : 1 ETH = 122 FABA
+* _Minimal invested limit_      : 1.9 ETH
+* _Price_                       : 1 ETH = 107 FABA
 * _FABAcompany tokens percent_  : 40% 
 * _Team tokens percent_         : 8% 
 * _Mentors tokens percent_      : 2% 
@@ -62,7 +62,7 @@ Investor must not use other wallets, coinmarkets or stocks. Can lose money.
 
 ### Referal system
 * _Referer percent_ - 10%
-* _Minimal investor value limit to activate referer bonus_ 1.7- ETH
+* _Minimal investor value limit to activate referer bonus_ 1.9- ETH
 * _Limitations_ - Investor сan't accrue bonus to himself
 
 
@@ -75,7 +75,7 @@ Investor must not use other wallets, coinmarkets or stocks. Can lose money.
 ### Crowdsale stages
 
 #### ICO
-* _Base price_                 : 122 FABA per ETH
+* _Base price_                 : 107 FABA per ETH
 * _Hardcap_                    : (549180 ETH)
 * _Period_                     : 300 days 
 * _Start_                      : •	01.03.2018 00:00:00 GMT
