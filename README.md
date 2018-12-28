@@ -75,7 +75,7 @@ Investor must not use other wallets, coinmarkets or stocks. Can lose money.
 ### Crowdsale stages
 
 #### ICO
-* _Base price_                 : 107 FABA per ETH
+* _Base price_                 : 119 FABA per ETH
 * _Hardcap_                    : (549180 ETH)
 * _Period_                     : 300 days 
 * _Start_                      : •	01.03.2018 00:00:00 GMT
