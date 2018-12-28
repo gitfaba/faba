@@ -48,7 +48,7 @@ Investor must not use other wallets, coinmarkets or stocks. Can lose money.
 ## Main network configuration
 
 * _Minimal invested limit_      : 1.9 ETH
-* _Price_                       : 1 ETH = 107 FABA
+* _Price_                       : 1 ETH = 119 FABA
 * _FABAcompany tokens percent_  : 40% 
 * _Team tokens percent_         : 8% 
 * _Mentors tokens percent_      : 2% 
